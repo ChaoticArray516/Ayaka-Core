@@ -1,0 +1,56 @@
+{
+  "app": {
+    "host": "0.0.0.0",
+    "port": 8081,
+    "debug": false
+  },
+  "api_keys": {
+    "llm": "your_api_key_here",
+    "tts": "your_tts_api_key_here"
+  },
+  "endpoints": {
+    "llm": "https://api.openai.com/v1",
+    "tts": "https://your-tts-endpoint.com"
+  },
+  "model_settings": {
+    "llm_model": "gpt-3.5-turbo",
+    "max_tokens": 1000,
+    "temperature": 0.7,
+    "system_prompt_prefix": "You are roleplaying as an AI companion. Stay in character.",
+    "response_timeout": 30
+  },
+  "audio_settings": {
+    "sample_rate": 22050,
+    "bit_depth": 16,
+    "channels": 1,
+    "format": "wav",
+    "voice_model": "companion_voice_model"
+  },
+  "personality_settings": {
+    "default_state": 1,
+    "default_emotional_level": 1,
+    "emotional_system_enabled": true,
+    "max_emotional_level": 4,
+    "context_memory_size": 50,
+    "state_transition_cooldown": 60,
+    "enable_public_persona": false
+  },
+  "communication_settings": {
+    "message_queue_size": 100,
+    "processing_thread_enabled": true,
+    "auto_reconnect": true,
+    "heartbeat_interval": 5
+  },
+  "logging": {
+    "log_level": "info",
+    "log_file": "ai_companion.log",
+    "max_log_size": "10MB",
+    "log_to_console": true
+  },
+  "development": {
+    "debug_mode": false,
+    "mock_apis": false,
+    "enable_profiling": false,
+    "test_mode": false
+  }
+}

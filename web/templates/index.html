@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Companion - Virtual Partner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .status-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .status-label {
+            font-weight: 500;
+        }
+
+        .status-value {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .yandere-indicator {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            background: linear-gradient(45deg, #ff1744, #ff6090);
+            margin-left: 0.5rem;
+        }
+
+        .loading {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            background: rgba(76, 175, 80, 0.9);
+            color: white;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.error {
+            background: rgba(244, 67, 54, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">💕 AI Companion 💕</div>
+        <div class="subtitle">💕 AI Virtual Companion System 💕</div>
+
+        <div class="status-card">
+            <div class="status-item">
+                <span class="status-label">Current Persona State</span>
+                <span class="status-value" id="persona-status">Loading...</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Emotional Level</span>
+                <span class="status-value">
+                    <span id="emotional-level">Loading...</span>
+                    <span class="emotional-indicator" id="emotional-indicator"></span>
+                </span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Session Duration</span>
+                <span class="status-value" id="session-duration">0m 0s</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Connection Status</span>
+                <span class="status-value pulse" id="connection-status">Connecting...</span>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="/chat" class="btn btn-primary">💕 Start Chatting 💕</a>
+            <button class="btn btn-secondary" onclick="setPersona('Gentle')">💕 Switch Persona 💕</button>
+            <button class="btn btn-secondary" onclick="adjustEmotionalLevel()">💕 Adjust Emotional Level 💕</button>
+            <button class="btn btn-secondary" onclick="refreshStatus()">💕 Refresh Status 💕</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="pulse">Processing, please wait...</div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        let socket;
+        let sessionStartTime = Date.now();
+        let connectionStatus = false;
+
+        function showNotification(message, isError = false) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.className = 'notification show' + (isError ? ' error' : '');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        function updateStatus() {
+            fetch('/api/status')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('persona-status').textContent = data.persona;
+                    document.getElementById('emotional-level').textContent = data.emotional_level;
+                    updateEmotionalIndicator(data.emotional_level);
+                })
+                .catch(error => {
+                    console.error('Failed to get status:', error);
+                    showNotification('Failed to get status', true);
+                });
+        }
+
+        function updateEmotionalIndicator(level) {
+            const indicator = document.getElementById('emotional-indicator');
+            const labels = ['Normal', 'Slight Concern', 'Gentle Protection', 'Deep Affection', 'Complete Devotion'];
+            indicator.textContent = labels[level] || 'Normal';
+        }
+
+        function updateSessionDuration() {
+            const duration = Math.floor((Date.now() - sessionStartTime) / 1000);
+            const minutes = Math.floor(duration / 60);
+            const seconds = duration % 60;
+            document.getElementById('session-duration').textContent = `${minutes}m ${seconds}s`;
+        }
+
+        function setPersona(persona) {
+            showLoading(true);
+
+            fetch('/api/set_persona', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ persona: persona })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showNotification(`Persona switched to: ${persona}`);
+                    updateStatus();
+                } else {
+                    showNotification('Switch failed: ' + (data.error || 'Unknown error'), true);
+                }
+            })
+            .catch(error => {
+                console.error('Persona switch failed:', error);
+                showNotification('Persona switch failed', true);
+            })
+            .finally(() => {
+                showLoading(false);
+            });
+        }
+
+        function adjustEmotionalLevel() {
+            const currentLevel = parseInt(document.getElementById('emotional-level').textContent);
+            const newLevel = (currentLevel + 1) % 5; // 0-4 cycle
+
+            showLoading(true);
+
+            fetch('/api/set_emotional_level', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ level: newLevel })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showNotification(`Emotional level adjusted to: ${newLevel}`);
+                    updateStatus();
+                } else {
+                    showNotification('Adjustment failed: ' + (data.error || 'Unknown error'), true);
+                }
+            })
+            .catch(error => {
+                console.error('Yandere level adjustment failed:', error);
+                showNotification('Emotional level adjustment failed', true);
+            })
+            .finally(() => {
+                showLoading(false);
+            });
+        }
+
+        function refreshStatus() {
+            updateStatus();
+            showNotification('Status refreshed');
+        }
+
+        function showLoading(show) {
+            const loading = document.getElementById('loading');
+            if (show) {
+                loading.classList.add('active');
+            } else {
+                loading.classList.remove('active');
+            }
+        }
+
+        function initSocket() {
+            socket = io();
+
+            socket.on('connect', () => {
+                connectionStatus = true;
+                document.getElementById('connection-status').textContent = 'Connected';
+                document.getElementById('connection-status').style.color = '#4caf50';
+                updateStatus();
+                showNotification('Connected to server');
+            });
+
+            socket.on('disconnect', () => {
+                connectionStatus = false;
+                document.getElementById('connection-status').textContent = 'Disconnected';
+                document.getElementById('connection-status').style.color = '#f44336';
+                showNotification('Disconnected from server', true);
+            });
+
+            socket.on('persona_changed', (data) => {
+                document.getElementById('persona-status').textContent = data.persona;
+                showNotification(`Persona switched to: ${data.persona}`);
+            });
+
+            socket.on('emotional_level_changed', (data) => {
+                document.getElementById('emotional-level').textContent = data.level;
+                updateEmotionalIndicator(data.level);
+                showNotification(`Emotional level adjusted to: ${data.level}`);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            initSocket();
+            updateStatus();
+
+            // Update session duration periodically
+            setInterval(updateSessionDuration, 1000);
+
+            // Update status periodically
+            setInterval(() => {
+                if (connectionStatus) {
+                    updateStatus();
+                }
+            }, 30000); // Update every 30 seconds
+        });
+    </script>
+</body>
+</html>

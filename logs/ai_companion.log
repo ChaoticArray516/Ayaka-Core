@@ -1,0 +1,343 @@
+2025-10-12 16:01:11,323 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:01:11,324 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:01:11,324 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:01:11,325 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 408cbb36-e141-4a55-9fa2-0b0c50dd3067
+2025-10-12 16:01:11,325 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:01:11,335 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:01:11,336 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:01:11,337 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:01:11,337 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:01:11,338 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:01:12,582 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:01:12,583 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:01:12,592 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:01:29,244 - ai_companion.web.socketio_handlers - INFO - Client connected: 1401549699200
+2025-10-12 16:01:35,156 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1401549699200
+2025-10-12 16:03:09,062 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:03:09,064 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:03:09,064 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:03:09,064 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: fb195737-76c9-4ff1-b972-48ccb49a595f
+2025-10-12 16:03:09,065 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:03:09,066 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:03:09,067 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:03:09,067 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:03:09,068 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:03:09,068 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:03:10,665 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:03:10,665 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:03:10,671 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:03:29,241 - ai_companion.web.app - ERROR - Chat page rendering failed: chat.html
+2025-10-12 16:05:02,504 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:05:02,506 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:05:02,506 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:05:02,506 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: a9ba6c63-0ba9-464e-84f7-7c72a8c2bb67
+2025-10-12 16:05:02,507 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:05:02,509 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:05:02,509 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:05:02,510 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:05:02,510 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:05:02,511 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:05:04,788 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:05:04,789 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:05:04,794 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:05:55,383 - ai_companion.web.socketio_handlers - INFO - Client connected: 2911448938624
+2025-10-12 16:06:05,741 - ai_companion.web.socketio_handlers - INFO - Client connected: 2911448938624
+2025-10-12 16:06:30,426 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2911448938624
+2025-10-12 16:07:38,123 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:07:38,123 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:07:38,124 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:07:38,124 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 47949597-da01-4150-b212-c199b80bcf53
+2025-10-12 16:07:38,125 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:07:38,126 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:07:38,127 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:07:38,127 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:07:38,128 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:07:38,128 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:07:48,236 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:07:48,236 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:07:48,242 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:07:52,429 - ai_companion.web.socketio_handlers - INFO - Client connected: 2351019341952
+2025-10-12 16:08:18,674 - ai_companion.web.app - ERROR - Chat page rendering failed: chat.html
+2025-10-12 16:11:35,946 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:11:35,947 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:11:35,947 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:11:35,948 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: ccab60eb-8d0f-42e9-8025-463f5c0d54dd
+2025-10-12 16:11:35,949 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:11:35,951 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:11:35,952 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:11:35,952 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:11:35,953 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:11:35,953 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:11:43,894 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:11:43,894 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:11:43,901 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:12:51,180 - ai_companion.web.socketio_handlers - INFO - Client connected: 2138134755456
+2025-10-12 16:12:51,287 - ai_companion.web.socketio_handlers - INFO - Client connected: 2138134755456
+2025-10-12 16:12:51,521 - ai_companion.web.socketio_handlers - INFO - Client connected: 2138134755456
+2025-10-12 16:12:56,362 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2138134755456
+2025-10-12 16:13:02,794 - ai_companion.web.app - ERROR - Home page rendering failed: index.html
+2025-10-12 16:15:04,083 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:15:04,085 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:15:04,086 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:15:04,087 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 41dbb6cf-6901-4c3d-966a-532bbd76d3b2
+2025-10-12 16:15:04,088 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:15:04,091 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:15:04,092 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:15:04,092 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:15:04,093 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:15:04,093 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:15:06,062 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:15:06,062 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:15:06,067 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:15:09,300 - ai_companion.web.socketio_handlers - INFO - Client connected: 2786422372480
+2025-10-12 16:15:10,201 - ai_companion.web.socketio_handlers - INFO - Client connected: 2786422372480
+2025-10-12 16:15:49,991 - ai_companion.web.socketio_handlers - INFO - Client connected: 2786422372480
+2025-10-12 16:16:19,930 - ai_companion.web.socketio_handlers - INFO - Client connected: 2786422372480
+2025-10-12 16:16:24,806 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2786422372480
+2025-10-12 16:17:10,085 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:17:10,086 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:17:10,086 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:17:10,086 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 27130b41-64cb-4897-8326-586f038831de
+2025-10-12 16:17:10,087 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:17:10,088 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:17:10,088 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:17:10,089 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:17:10,089 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:17:10,090 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:17:11,179 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:17:11,180 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:17:11,187 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:17:14,095 - ai_companion.web.socketio_handlers - INFO - Client connected: 2686435866752
+2025-10-12 16:17:14,575 - ai_companion.web.socketio_handlers - INFO - Client connected: 2686435866752
+2025-10-12 16:17:15,816 - ai_companion.web.socketio_handlers - INFO - Client connected: 2686435866752
+2025-10-12 16:19:16,847 - ai_companion.web.socketio_handlers - INFO - Client connected: 2686435866752
+2025-10-12 16:19:21,003 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2686435866752
+2025-10-12 16:21:24,451 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:21:24,453 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:21:24,458 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:21:24,459 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: ec340094-bbde-45fd-9a70-b94e510ea1ba
+2025-10-12 16:21:24,460 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:21:24,479 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:21:24,480 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:21:24,481 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:21:24,481 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:21:24,482 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:21:27,569 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:21:27,570 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:21:27,575 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:21:27,852 - ai_companion.web.socketio_handlers - INFO - Client connected: 2581134129280
+2025-10-12 16:21:27,915 - ai_companion.web.socketio_handlers - INFO - Client connected: 2581134129280
+2025-10-12 16:21:28,333 - ai_companion.web.socketio_handlers - INFO - Client connected: 2581134129280
+2025-10-12 16:22:10,360 - ai_companion.web.socketio_handlers - INFO - Client connected: 2581134129280
+2025-10-12 16:22:14,609 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2581134129280
+2025-10-12 16:23:22,167 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:23:22,169 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:23:22,169 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:23:22,170 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 8dcd6c32-6ac2-4e52-9d38-67eb22a8958c
+2025-10-12 16:23:22,171 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:23:22,173 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:23:22,173 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:23:22,174 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:23:22,175 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:23:22,175 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:23:23,202 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:23:23,202 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:23:23,208 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:23:24,212 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:23:25,733 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:23:26,446 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:24:51,669 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:24:54,551 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2522593441920
+2025-10-12 16:24:55,229 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:25:15,003 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:25:25,146 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2522593441920
+2025-10-12 16:25:37,660 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:25:37,661 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:25:37,662 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:25:37,663 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 1c36b0c4-e2b9-4585-bb9c-ed6d4fca1692
+2025-10-12 16:25:37,663 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:25:37,667 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:25:37,668 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:25:37,668 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:25:37,669 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:25:37,669 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:25:39,188 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:25:39,189 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:25:39,194 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:25:46,969 - ai_companion.web.socketio_handlers - INFO - Client connected: 2522593441920
+2025-10-12 16:26:10,402 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2522593441920
+2025-10-12 16:26:36,754 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:26:36,755 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:26:36,761 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:26:36,763 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 1b9f4649-3f55-451b-8820-c70bcb831112
+2025-10-12 16:26:36,764 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:26:36,766 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:26:36,766 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:26:36,768 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:26:36,768 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:26:36,769 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:26:38,045 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:26:38,045 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:26:38,050 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:26:38,555 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:26:40,587 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:26:42,030 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:26:42,634 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:27:14,325 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:27:23,701 - ai_companion.web.socketio_handlers - INFO - Client connected: 2335663339648
+2025-10-12 16:27:33,761 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2335663339648
+2025-10-12 16:28:37,524 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:28:37,525 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:28:37,525 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:28:37,525 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 013a1156-a040-4640-a1ec-ee67f94aa85a
+2025-10-12 16:28:37,526 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:28:37,527 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:28:37,527 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:28:37,528 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:28:37,528 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:28:37,529 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:28:41,403 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:28:41,404 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:28:41,409 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:28:42,191 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:28:42,470 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:28:43,524 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:28:43,863 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:28:45,527 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:29:09,119 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:29:19,906 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2629443401856
+2025-10-12 16:31:36,911 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:31:55,606 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:32:37,426 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:32:44,009 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2629443401856
+2025-10-12 16:33:37,080 - ai_companion.web.socketio_handlers - INFO - Client connected: 2629443401856
+2025-10-12 16:33:42,490 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2629443401856
+2025-10-12 16:35:02,179 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:35:02,180 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:35:02,181 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:35:02,182 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 47d0a7b7-cd0a-406d-805c-68a32c08f1a6
+2025-10-12 16:35:02,182 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:35:02,184 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:35:02,185 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:35:02,186 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:35:02,186 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:35:02,187 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:35:03,648 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:35:03,649 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:35:03,654 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:35:03,954 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:04,375 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:04,484 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:05,040 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:05,254 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:05,517 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:05,812 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:35:34,507 - ai_companion.web.socketio_handlers - INFO - Client connected: 2171790440576
+2025-10-12 16:36:22,060 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2171790440576
+2025-10-12 16:39:05,240 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 16:39:05,241 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 16:39:05,243 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 16:39:05,244 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: ae5d4568-2648-4d3d-8c5a-6e1fe52cb01b
+2025-10-12 16:39:05,247 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 16:39:05,249 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 16:39:05,249 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 16:39:05,250 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 16:39:05,251 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 16:39:05,251 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 16:39:15,030 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 16:39:15,031 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 16:39:15,037 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 16:40:16,625 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 16:40:46,317 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 16:41:11,879 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 16:41:23,894 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:13:31,629 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:13:31,630 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:13:31,630 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:13:31,631 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 6ce278da-424b-4885-9295-92d4090c6b2e
+2025-10-12 17:13:31,631 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:13:31,634 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:13:31,635 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:13:31,635 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:13:31,636 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:13:31,636 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:13:33,128 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:13:33,129 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:13:33,134 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:13:54,597 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 17:14:13,183 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:17:33,198 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:17:33,198 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:17:33,199 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:17:33,199 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 8455af3b-e415-4b7c-b0fe-121edc5658d1
+2025-10-12 17:17:33,199 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:17:33,201 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:17:33,201 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:17:33,202 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:17:33,202 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:17:33,203 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:17:33,955 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:17:33,956 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:17:33,962 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:17:45,923 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 17:18:08,609 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:21:13,451 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:21:13,452 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:21:13,453 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:21:13,453 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: a0532442-d9eb-4d78-9655-d24a2eadf9a9
+2025-10-12 17:21:13,453 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:21:13,456 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:21:13,456 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:21:13,457 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:21:13,457 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:21:13,457 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:21:14,728 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:21:14,728 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:21:14,733 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:21:25,492 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 17:21:33,281 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:22:58,852 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:22:58,853 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:22:58,853 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:22:58,853 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 7677a238-71c7-4327-9cea-54388826e748
+2025-10-12 17:22:58,854 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:22:58,855 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:22:58,856 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:22:58,856 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:22:58,856 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:22:58,857 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:23:00,072 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:23:00,072 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:23:00,079 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:23:12,462 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 17:23:21,545 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:28:20,853 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:28:20,853 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:28:20,854 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:28:20,854 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: c86931d4-e401-4252-b92c-9a94cde70619
+2025-10-12 17:28:20,855 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:28:20,857 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:28:20,858 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:28:20,859 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:28:20,859 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:28:20,860 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:28:22,341 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:28:22,341 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:28:22,348 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:28:39,156 - ai_companion.web.socketio_handlers - INFO - Client connected: 1805779351680
+2025-10-12 17:28:58,056 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 1805779351680
+2025-10-12 17:29:29,142 - ai_companion.web.app - INFO - Initializing AI Companion Web application...
+2025-10-12 17:29:29,144 - ai_companion.config.settings - INFO - 配置文件加载成功: config/settings.json
+2025-10-12 17:29:29,146 - ai_companion.ai.persona_manager - INFO - PersonaManager初始化完成，当前状态: private, 情感等级: 1
+2025-10-12 17:29:29,147 - ai_companion.ai.conversation_manager - INFO - ConversationManager初始化完成，会话ID: 25f9636c-7ef9-4e21-87ba-edc258f1dfe6
+2025-10-12 17:29:29,147 - ai_companion.services.llm_client - INFO - LLMClient初始化完成，提供商: zhipu, 模型: glm-4.5
+2025-10-12 17:29:29,149 - ai_companion.services.cache_service - INFO - 缓存数据库初始化完成
+2025-10-12 17:29:29,150 - ai_companion.services.cache_service - INFO - CacheService初始化完成，缓存目录: cache
+2025-10-12 17:29:29,151 - ai_companion.memory.chat_history_manager - INFO - ChatHistoryManager初始化完成，历史目录: d:\AGI\Integrates\General\core\ai_companion\memory\memory\chathistory
+2025-10-12 17:29:29,151 - ai_companion.memory.memory_manager - INFO - MemoryManager初始化完成
+2025-10-12 17:29:29,151 - ai_companion.web.app - INFO - LLM client configuration completed
+2025-10-12 17:29:31,027 - ai_companion.web.app - INFO - LLM connection test successful
+2025-10-12 17:29:31,027 - ai_companion.web.app - INFO - Application components initialized
+2025-10-12 17:29:31,035 - ai_companion.web.socketio_handlers - INFO - Socket.IO event handlers registered successfully
+2025-10-12 17:30:16,840 - ai_companion.web.socketio_handlers - INFO - Client connected: 2418196179568
+2025-10-12 17:30:45,753 - ai_companion.web.socketio_handlers - INFO - Client disconnected: 2418196179568
