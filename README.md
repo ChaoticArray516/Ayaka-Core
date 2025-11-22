@@ -34,7 +34,7 @@ The AI Virtual Companion System is an intelligent dialogue system based on Pytho
 ### Prerequisites
 
 - Python 3.11.12+
-- Anaconda/Miniconda (recommended) or Python virtual environment
+- UV (Python package manager) - [Installation Guide](https://github.com/astral-sh/uv)
 - 4GB+ RAM
 
 ### One-click Installation
@@ -54,30 +54,39 @@ chmod +x install.sh
 
 ### Manual Installation
 
-1. **Create Environment**
+1. **Install UV** (if not already installed)
 ```bash
-# Using Conda (recommended)
-conda env create -f environment.yml
-conda activate ai-companion
+# Windows (PowerShell)
+irm https://astral.sh/uv/install.ps1 | iex
 
-# Or using Python virtual environment
-python -m venv ai-companion-env
-source ai-companion-env/bin/activate  # Linux/macOS
-ai-companion-env\Scripts\activate     # Windows
+# Linux/macOS
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-2. **Install Dependencies**
+2. **Create Environment**
 ```bash
-pip install -r requirements.txt
+# Create UV virtual environment
+uv venv --python 3.11.12
+
+# Activate environment
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
 ```
 
-3. **Configure Environment**
+3. **Install Dependencies**
+```bash
+# Install project and dependencies
+uv pip install -e .
+uv pip install -e ".[dev]"  # Install development dependencies
+```
+
+4. **Configure Environment**
 ```bash
 cp .env.example .env
 # Edit the .env file to configure API keys and other parameters
 ```
 
-4. **Start Service**
+5. **Start Service**
 ```bash
 python start.py
 ```
@@ -134,8 +143,10 @@ core/
 │   ├── templates/            # HTML templates
 │   └── static/               # Static resources
 ├── config/                   # Configuration files
-├── environment.yml           # Conda environment configuration
-├── requirements.txt          # Python dependencies
+├── .uv/                      # UV configuration directory
+├── pyproject.toml            # UV project configuration
+├── requirements.txt          # Python dependencies (legacy)
+├── environment.yml           # Conda environment configuration (deprecated)
 ├── start.py                  # Startup script
 └── README.md                 # Project documentation
 ```
@@ -208,6 +219,71 @@ python start.py --port 5001
 4. Push to branch
 5. Create Pull Request
 
+## 📝 Changelog
+
+### v2.0.0 - 2025-11-21
+
+#### 🚀 Major Changes
+- **Environment Management Upgrade**: Migrated from Conda to UV Python package manager
+  - Added `pyproject.toml` configuration file, complying with modern Python project standards
+  - Optimized dependency management and virtual environment creation process
+  - Improved installation speed and environment consistency
+
+#### 🔄 Technical Improvements
+- **Installation Script Refactoring**:
+  - `install.sh` and `install.bat` completely updated to support UV environment
+  - Simplified installation process, reducing user configuration complexity
+  - Enhanced error handling and user-friendly prompts
+
+- **Project Structure Optimization**:
+  - Added `.uv/` configuration directory containing UV-related configurations
+  - Retained `requirements.txt` and `environment.yml` for backward compatibility
+  - Updated documentation to reflect new environment management approach
+
+#### 📚 Documentation Updates
+- **README.md Comprehensive Update**:
+  - Updated installation guide with detailed UV usage instructions
+  - Corrected project structure description, marking new and deprecated files
+  - Added detailed steps for UV installation and configuration
+
+#### 🛠️ Developer Experience Improvements
+- **Modernized Dependency Management**:
+  - Using `uv pip install -e .` for editable installation
+  - Support for independent management of development dependencies `uv pip install -e ".[dev]"`
+  - Faster dependency resolution and installation speed
+
+#### 📋 Migration Guide
+For users upgrading from previous versions:
+
+1. **Install UV**:
+   ```bash
+   # Windows (PowerShell)
+   irm https://astral.sh/uv/install.ps1 | iex
+   
+   # Linux/macOS
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. **Create New Environment**:
+   ```bash
+   uv venv --python 3.11.12
+   source .venv/bin/activate  # Linux/macOS
+   .venv\Scripts\activate     # Windows
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   uv pip install -e .
+   uv pip install -e ".[dev]"
+   ```
+
+#### 🔮 Future Plans
+- Consider completely removing Conda support in future versions
+- Explore UV's lock file functionality to further improve environment consistency
+- Integrate more advanced UV features, such as dependency cache optimization
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License
@@ -218,6 +294,7 @@ This project is licensed under the MIT License
 - [Anthropic](https://www.anthropic.com/) - Claude model support
 - [Flask](https://flask.palletsprojects.com/) - Web framework
 - [Socket.IO](https://socket.io/) - Real-time communication
+- [UV](https://github.com/astral-sh/uv) - Modern Python package manager
 
 ---
 
